@@ -1,10 +1,13 @@
 ## Git/Github/Git Bash Crash Course and Essential Commands ##
 
+Elaborate tutorial on git commands:
+https://www.geeksforgeeks.org/working-on-git-bash/
+
 GITHUB is   1) a version control system
             2) a publishing tool
             3) a collaboration platform
 
-Advantage: ability to save process ang go back to earlier points of the project           
+Advantage: ability to save process and go back to earlier points of the project           
 
 GIT BASH is an application that provides Git command line experience on the 
 Operating System
@@ -61,6 +64,22 @@ git status
 
 git commit -m "first commit"
 
+## deadling with git merge error E325: 
+
+git merge --abort
+rm ~/Documents/GitHub/git_trial/.git/.COMMIT_EDITMSG.swp
+
+## deadling with the commit message:
+
+Just type i and you'll go in the -- INTER -- mode, now you can write your comments.
+
+After you have done, press esc key in your keyboard and you'll go to command mode. (see on the bottom of the console)
+
+Now save changes by writing :w followed by pressing enter key
+
+You can quit now by writing :q followed by pressing enter key
+
+
 # step 7) add the URL for the remote repository where your local repository
 # will be pushed to
 
@@ -73,3 +92,31 @@ git push -u origin master
 # you will have to enter your github username and password or connect VS Code
 
 # step 9) double check that your file appear in the remote Github repository
+
+
+FORCING YOUR LOCAL CHANGES TO A REMOTE REPOSITORY = FORCED UPDATE (IF REMOTE REPO CONTAINS CHANGES YOU WANT TO OVERWRITE)
+
+# we use the command git push -f <remote> <branch>
+
+git push -f origin master 
+
+#Leaving off <remote> and <branch> will force push all local branches that have set --set-upstream.
+
+PULLING CODE FROM A REMOTE REPOSITORY (GITHUB)
+
+git pull    
+
+STASHING
+
+# Stashing is a Git function that allows you to temporarily save your file changes without applying them to your project
+
+git stash
+git stash drop
+
+
+CLONING A REMOTE REPOSITORY TO YOUR LOCAL SYSTEM
+
+# Cloning is used to get a copy of the existing git repository.
+# When you run the git clone command it makes the zip folder saved in your default location
+
+Git clone <url>
