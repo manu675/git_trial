@@ -102,6 +102,10 @@ git push -f origin master
 
 #Leaving off <remote> and <branch> will force push all local branches that have set --set-upstream.
 
+
+# checking the remote url git will currently push code to
+!git config --get remote.origin.url
+
 PULLING CODE FROM A REMOTE REPOSITORY (GITHUB)
 
 git pull    
@@ -112,6 +116,7 @@ STASHING
 
 git stash
 git stash drop
+
 
 
 CLONING A REMOTE REPOSITORY TO YOUR LOCAL SYSTEM
