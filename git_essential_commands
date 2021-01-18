@@ -168,5 +168,13 @@ MERGING (The different lines of development created through branching can be int
 
 git merge
 
-REMOTE BRANCHING
+
+CREATING A NEW DIRECTORY USING GIT
+
+mk stands for make and rm stands for remove
+
+# setting up a new local directory (folder) in your current working directory
+
+
+mkdir <local_folder_name>
 
