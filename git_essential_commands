@@ -133,23 +133,40 @@ CLONING A REMOTE REPOSITORY TO YOUR LOCAL SYSTEM
 # Cloning is used to get a copy of the existing git repository.
 # When you run the git clone command it makes the zip folder saved in your default location
 
-Git clone <url>
+Git clone < github url > < local directory >
 
 
-BRANCHING IN GIT
+BRANCHING IN GIT (branches are used to divide the project and create independent lines of development)
+
+It's important to understand that branches are just pointers to commits.
+
+LOCAL BRANCHING
 
 # showing all branches in your repository
 
 git branch
 
-# creating a new branch
+# creating a new branch called <branch_name>
 
-Create a new branch
-
-git branch branch_name
+git branch <branch_name>
 
 # To simply switch to a branch 
 
-git checkout branch_name
+git checkout <branch_name>
 
-# Now the same commit add and commit actions can be performed on this branch as well
+# creating a new branch AND switching to that new branch
+
+git checkout -b <branch_name>
+
+## Now the same commit add and commit actions can be performed on this branch as well
+
+# deleting a branch (which cannot be selected at the momemt)
+
+git branch -d <branch_name>
+
+MERGING (The different lines of development created through branching can be integrated in a single branch again)
+
+git merge
+
+REMOTE BRANCHING
+
