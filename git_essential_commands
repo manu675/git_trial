@@ -65,7 +65,7 @@ git reset
 
 # Unstaging a specific file:
 
-git restore --staged <filename>
+git reset HEAD <filename>
 
 
 # step 6) commit the files you have staged in your local repository
