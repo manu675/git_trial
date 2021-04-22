@@ -24,10 +24,18 @@ software development.
 
 HOW TO PUSH CODE TO GITHUB
 
-# step 1) create a new repository on github 
+# step 1) create a new repository on github (GITHUB FILE SIZE LIMIT: 100MB)
+
+REMOTE REPO URLs FOR CURRENT/PAST PROJECTS:
 
 # the remote repository URL is:
 https://github.com/manu675/git_trial.git
+
+# data mining cup 21 remote repo URL:
+https://github.com/manu675/Data_Mining_Cup_Prudsys_21.git
+
+# BRIC AP Project remote repo URL:
+https://github.com/manu675/BRIC_Asset_Pricing_Project.git
 
 # step 2) open the terminal
 
@@ -39,8 +47,15 @@ pwd
 
 
 # step 3) set your local project as the current working directory
+# wd analytics cup: /Users/Manu/Documents/GitHub/analytics_cup_21
 
 cd /Users/Manu/Documents/GitHub/git_trial
+
+LOCAL WDs FOR CURRENT/PAST PROJECTS:
+
+# data mining cup local wd: /Users/Manu/Documents/GitHub/data_mining_cup_21
+
+# BRIC AP Project local wd: /Users/Manu/Documents/GitHub/bric_ap_project
 
 # the ls command shows all the files contained in the current wd
 
@@ -57,6 +72,11 @@ git add . # we stage all files in the current wd for a commit
 
 # alternatively, we can add/stage a single file for a commit
 # using git add <filename>
+
+## dealing with the error "fatal: Unable to create '/Users/Manu/Documents/GitHub/bric_ap_project/.git/index.lock': File exists."
+
+rm -f .git/index.lock
+
 
 # we check all files that are staged for a commit
 
@@ -99,6 +119,8 @@ git remote add origin https://github.com/manu675/git_trial.git
 
 # step 8) push the code in your local repository to Github 
 
+# REMEMBER THAT THERE IS A FILE SIZE LIMIT!
+
 git push -u origin master
 
 # you will have to enter your github username and password or connect VS Code
@@ -124,7 +146,8 @@ git pull
 
 STASHING
 
-# Stashing is a Git function that allows you to temporarily save your file changes without applying them to your project
+# Stashing is a Git function that allows you to temporarily save your file changes without applying 
+# them to your project
 
 git stash
 git stash drop
